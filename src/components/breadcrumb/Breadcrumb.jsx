@@ -29,7 +29,7 @@ function Breadcrumb() {
             <
               BreadcrumbLink
               key={ i }
-              {...link}
+              { ...link }
             />
           ))
         }

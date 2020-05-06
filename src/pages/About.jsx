@@ -1,10 +1,9 @@
 import React from 'react'
+import Header from '../components/header/Header'
 
 function About(props) {
   return (
-    <header>
-      <h1>About Us</h1>
-    </header>
+    <Header heading='About Us'/>
   )
 }
 

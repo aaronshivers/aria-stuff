@@ -1,10 +1,9 @@
 import React from 'react'
+import Header from '../components/header/Header'
 
 function Home(props) {
   return (
-    <header>
-      <h1>Home Page</h1>
-    </header>
+    <Header heading='Home Page'/>
   )
 }
 

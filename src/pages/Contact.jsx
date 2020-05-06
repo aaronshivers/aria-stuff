@@ -1,10 +1,9 @@
 import React from 'react'
+import Header from '../components/header/Header'
 
 function Contact(props) {
   return (
-    <header>
-      <h1>Contact Us</h1>
-    </header>
+    <Header heading='Contact Us'/>
   )
 }
 
