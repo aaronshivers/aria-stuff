@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './breadcrumb.scss'
+import './breadcrumb.css'
 
 const Links = [
   {
