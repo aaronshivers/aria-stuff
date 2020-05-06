@@ -1,23 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './breadcrumb.css'
+import BreadcrumbLink from '../breadcrumb-link/BreadcrumbLink'
 
 const Links = [
   {
     label: 'Home',
-    href: '/'
+    href: '/',
   },
   {
     label: 'About Us',
-    href: '/about'
+    href: '/about',
   },
   {
     label: 'Contact Us',
-    href: '/contact'
+    href: '/contact',
   },
 ]
 
-function Breadcrumb(props) {
+function Breadcrumb() {
   return (
     <nav
       aria-label="Breadcrumb"
@@ -26,11 +26,11 @@ function Breadcrumb(props) {
       <ol>
         {
           Links.map((link, i) => (
-            <li key={i}>
-              <Link to={link.href}>
-                { link.label }
-              </Link>
-            </li>
+            <
+              BreadcrumbLink
+              key={ i }
+              {...link}
+            />
           ))
         }
       </ol>
